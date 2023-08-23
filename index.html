@@ -52,12 +52,12 @@
             methods: {
                 sortDescending(){
                     // по убыванию
-                    this.products.sort((a, b) => a.price < b.price ? 1 : -1);
+                    this.products.sort((a, b) => b.price - a.price);
                 },
-
+                
                 sortAscending(){
                     // по возрастанию
-                    this.products.sort((a, b) => a.price > b.price ? 1 : -1);
+                    this.products.sort((a, b) => a.price - b.price);
                 }
             }
         })
